@@ -27,8 +27,19 @@
       }
     </style>
     
-    <label><h1>Último dia para ver é <b><span id="data"></span></b></h1></label>
-    <script>
+   </head>
+<body>
+<main class="main" id="main">
+
+<header class="header" id="header">
+<div class="container">
+<div class="row">
+
+	
+	<!-- DATA PARA VER -->
+
+	<label><h1>El último día para verte es <b><span id="data"></span></b></h1></label>
+<script>
 				let data = document.getElementById('data');
 				var text = document.createTextNode(RetornaDataHoraAtual());        
 				data.appendChild(text);
@@ -39,6 +50,11 @@
 					return localdate;
 				}
 			</script>
+
+</div>
+</div>
+</header>
+
     
  <!-- Meta Pixel Code -->
 <script>
