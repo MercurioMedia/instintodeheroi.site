@@ -27,7 +27,18 @@
       }
     </style>
     
-    <label><h1>El último día para verte es <b><span id="data"></span></b></h1></label>
+    <label><h1>Último dia para ver é <b><span id="data"></span></b></h1></label>
+    <script>
+				let data = document.getElementById('data');
+				var text = document.createTextNode(RetornaDataHoraAtual());        
+				data.appendChild(text);
+
+				function RetornaDataHoraAtual(){
+					var dNow = new Date();
+					var localdate = dNow.getDate() + '/' + (dNow.getMonth()+1) + '/' + dNow.getFullYear();
+					return localdate;
+				}
+			</script>
     
  <!-- Meta Pixel Code -->
 <script>
